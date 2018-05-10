@@ -7,5 +7,6 @@ target 'Push DML' do
 
   # Pods for Push DML
   pod 'Firebase/Core'
-
+  pod 'Firebase/Messaging'
+  
 end

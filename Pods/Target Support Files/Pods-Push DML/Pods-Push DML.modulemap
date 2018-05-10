@@ -1,0 +1,6 @@
+framework module Pods_Push_DML {
+  umbrella header "Pods-Push DML-umbrella.h"
+
+  export *
+  module * { export * }
+}

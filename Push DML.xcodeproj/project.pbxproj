@@ -12,6 +12,8 @@
 		1113C7B220A48E61000D4961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1113C7B020A48E61000D4961 /* Main.storyboard */; };
 		1113C7B420A48E63000D4961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1113C7B320A48E63000D4961 /* Assets.xcassets */; };
 		1113C7B720A48E63000D4961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1113C7B520A48E63000D4961 /* LaunchScreen.storyboard */; };
+		1113C7BF20A49110000D4961 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1113C7BE20A49110000D4961 /* GoogleService-Info.plist */; };
+		2ECE67DC4B1771253F1A4B50 /* Pods_Push_DML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F61170624FAE6E4AC6976D /* Pods_Push_DML.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		1113C7B320A48E63000D4961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1113C7B620A48E63000D4961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1113C7B820A48E63000D4961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1113C7BE20A49110000D4961 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A3A88C2286C9F47F2510448 /* Pods-Push DML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push DML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Push DML/Pods-Push DML.debug.xcconfig"; sourceTree = "<group>"; };
+		6AE44A0B39425594C46CB547 /* Pods-Push DML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push DML.release.xcconfig"; path = "Pods/Target Support Files/Pods-Push DML/Pods-Push DML.release.xcconfig"; sourceTree = "<group>"; };
+		85F61170624FAE6E4AC6976D /* Pods_Push_DML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push_DML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECE67DC4B1771253F1A4B50 /* Pods_Push_DML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				1113C7AB20A48E61000D4961 /* Push DML */,
 				1113C7AA20A48E61000D4961 /* Products */,
+				EDDA7FDCE99EDE2D4F54614A /* Pods */,
+				B6B1162B3494151BE7854704 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		1113C7AB20A48E61000D4961 /* Push DML */ = {
 			isa = PBXGroup;
 			children = (
+				1113C7BE20A49110000D4961 /* GoogleService-Info.plist */,
 				1113C7AC20A48E61000D4961 /* AppDelegate.swift */,
 				1113C7AE20A48E61000D4961 /* ViewController.swift */,
 				1113C7B020A48E61000D4961 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = "Push DML";
 			sourceTree = "<group>";
 		};
+		B6B1162B3494151BE7854704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85F61170624FAE6E4AC6976D /* Pods_Push_DML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDDA7FDCE99EDE2D4F54614A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A3A88C2286C9F47F2510448 /* Pods-Push DML.debug.xcconfig */,
+				6AE44A0B39425594C46CB547 /* Pods-Push DML.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1113C7BB20A48E63000D4961 /* Build configuration list for PBXNativeTarget "Push DML" */;
 			buildPhases = (
+				4D325192ECA10A6A4A6A3607 /* [CP] Check Pods Manifest.lock */,
 				1113C7A520A48E61000D4961 /* Sources */,
 				1113C7A620A48E61000D4961 /* Frameworks */,
 				1113C7A720A48E61000D4961 /* Resources */,
+				2A92BD0CEB47E50A518EA800 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				1113C7B720A48E63000D4961 /* LaunchScreen.storyboard in Resources */,
+				1113C7BF20A49110000D4961 /* GoogleService-Info.plist in Resources */,
 				1113C7B420A48E63000D4961 /* Assets.xcassets in Resources */,
 				1113C7B220A48E61000D4961 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A92BD0CEB47E50A518EA800 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Push DML/Pods-Push DML-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Push DML/Pods-Push DML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D325192ECA10A6A4A6A3607 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Push DML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1113C7A520A48E61000D4961 /* Sources */ = {
@@ -278,15 +349,13 @@
 		};
 		1113C7BC20A48E63000D4961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3A88C2286C9F47F2510448 /* Pods-Push DML.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD5RQB944P;
 				INFOPLIST_FILE = "Push DML/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.org.coolamber.Push-DML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +365,13 @@
 		};
 		1113C7BD20A48E63000D4961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE44A0B39425594C46CB547 /* Pods-Push DML.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KD5RQB944P;
 				INFOPLIST_FILE = "Push DML/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.org.coolamber.Push-DML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
